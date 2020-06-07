@@ -1,0 +1,16 @@
+{
+  "name": "lokasiku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mwafa/lokasiku.git",
+  "author": "Muhammad Wafa <wafax.4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fuzzy-search": "^3.2.1"
+  }
+}
