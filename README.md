@@ -23,7 +23,7 @@ Searching data menggunakan Fuzzy Search. Listen port default `90`
 
 **Example**:
 
-**Request**: `localhost:90/prov?name=jam`
+**Request**: `localhost:90/prov?name=lam`
 
 **Response**:
 
@@ -85,5 +85,41 @@ Searching data menggunakan Fuzzy Search. Listen port default `90`
       "nama": "NATAR"
     }
   ]
+}
+```
+
+---
+
+## Single ID
+
+**Endpoint**: /[ID KECAMATAN]
+
+**Request**: `localhost:90/1803060`
+
+**Response**:
+
+```json
+{
+  "result": {
+    "prov": {
+      "id": "18",
+      "nama": "LAMPUNG"
+    },
+    "reg": {
+      "id": "1803",
+      "nama": "KABUPATEN LAMPUNG SELATAN"
+    }
+  }
+}
+```
+
+## ERROR
+
+**Error response**:
+
+```json
+{
+  "error": true,
+  "message": "Some message here!"
 }
 ```
